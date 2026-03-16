@@ -1,15 +1,18 @@
-🌐 WebMind AI — Chat with Any Website
+**🌐 WebMind AI — Chat with Any Website**
 
 💬 Transform any website into an interactive AI assistant using Retrieval-Augmented Generation (RAG).
+--------------------------------------------------------------------------------------------------------------------------------------------------------
 
 WebMind AI is an end-to-end Generative AI application that allows users to chat with the content of any public website. It extracts webpage data, builds a semantic vector index, retrieves relevant context, and generates grounded answers using a Large Language Model.
+----------------------------------------------------------------------------
 
-🎥 Demo Video
+*🎥 Demo Video*
 
 👉 Watch the project demo:
 (https://github.com/user-attachments/assets/f9107eda-4902-4aa6-a798-83c4ca39e10b)
+----------------------------------------------------------------------------
 
-🚀 Features
+**🚀 Features**
 Feature	Description
 🌐 Website Input	Enter any public website URL
 🔍 RAG Pipeline	Retrieves relevant content from the webpage
@@ -18,7 +21,8 @@ Feature	Description
 ⚡ Fast Inference	Powered by Groq LLM
 🗄️ Local Vector Store	No external database required
 🔄 Switch Websites	Load and analyze new URLs anytime
-🧠 System Architecture
+----------------------------------------------------------------------------
+**🧠 System Architecture**
 User Enters URL
         │
         ▼
@@ -69,8 +73,9 @@ Streamlit — Interactive web interface
 🐍 Backend
 
 Python
+----------------------------------------------------------------------------
 
-📂 Project Structure
+**📂 Project Structure**
 WebMind-AI/
 │
 ├── app.py              # Streamlit application interface
@@ -79,7 +84,8 @@ WebMind-AI/
 ├── evaluation.py       # RAG evaluation (optional)
 ├── requirements.txt    # Dependencies
 └── README.md
-🔄 Pipeline Workflow
+----------------------------------------------------------------------------
+**🔄 Pipeline Workflow**
 1️⃣ Website Processing
 
 The provided URL is loaded and cleaned to extract meaningful textual content.
@@ -149,15 +155,16 @@ streamlit run app.py
 Open the local URL shown in your terminal (usually http://localhost:8501
 ).
 
-⚠️ Limitations
+**⚠️ Limitations**
 
 Works only with publicly accessible websites
 
 Some JavaScript-heavy pages may not load correctly
 
 Only analyzes the provided page (not the entire domain)
+---------------------------------------------------------------------------
 
-🔮 Future Improvements
+**🔮 Future Improvements**
 
 Multi-page website crawling
 
@@ -172,14 +179,15 @@ Cloud deployment
 📊 RAG Evaluation (Optional)
 
 Evaluation can be performed using RAGAS metrics to measure faithfulness and relevance of generated answers.
+----------------------------------------------------------------------------
 
-⚠️ Deployment Status
+**⚠️ Deployment Status**
 
 The project currently runs locally.
 Deployment on cloud platforms may require configuration adjustments for API keys and dependencies.
+----------------------------------------------------------------------------
 
-👨‍💻 Author
-
+**👨‍💻 Author**
 Jatin Dhanda
 AI / Machine Learning Enthusiast — focused on building LLM-powered intelligent systems 🚀
 
