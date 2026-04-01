@@ -6,10 +6,8 @@ WebMind AI is an end-to-end Generative AI application that allows users to chat 
 
 ---
 
-## 🎥 Demo Video
-
-👉 Watch the project demo:(
-https://github.com/user-attachments/assets/af30213d-8a64-499a-8f21-465884b6561d)
+🚀 Live Demo: https://huggingface.co/spaces/Jatin0019/WebMind-AI  
+Try the AI-powered website assistant directly in your browser.
 
 ---
 
