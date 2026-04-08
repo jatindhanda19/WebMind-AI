@@ -204,12 +204,6 @@ Evaluation can be performed using **RAGAS** metrics to measure faithfulness and 
 
 ---
 
-## ⚠️ Deployment Status
-
-The project currently runs locally. Deployment on cloud platforms may require configuration adjustments for API keys and dependencies.
-
----
-
 ## 👨‍💻 Author
 
 **Jatin Dhanda**  
