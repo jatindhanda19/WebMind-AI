@@ -1,32 +1,32 @@
-# 🧠 WebMind AI — Chat with Any Website
+#  WebMind AI — Chat with Any Website
 
-💬 Transform any website into an interactive AI assistant using Retrieval-Augmented Generation (RAG).
+ Transform any website into an interactive AI assistant using Retrieval-Augmented Generation (RAG).
 
 WebMind AI is an end-to-end Generative AI application that allows users to chat with the content of any public website. It extracts webpage data, builds a semantic vector index, retrieves relevant context, and generates grounded answers using a Large Language Model.
 
 ---
 
-🚀 Live Demo: https://huggingface.co/spaces/Jatin0019/WebMind-AI  
+Live Demo: https://huggingface.co/spaces/Jatin0019/WebMind-AI  
 Try the AI-powered website assistant directly in your browser.
 
 ---
 
-## 🚀 Features
+## Features
 
 | Feature | Description |
 |--------|-------------|
-| 🌐 Website Input | Enter any public website URL |
-| 🔍 RAG Pipeline | Retrieves relevant content from the webpage |
-| 💬 Conversational Chat | Ask follow-up questions naturally |
-| 🧠 Context-Aware Answers | Responses grounded in website content only |
-| ⚡ Fast Inference | Powered by Groq LLM (LLaMA 3) |
-| 🗄️ Local Vector Store | No external database required |
-| 🔄 Switch Websites | Load and analyze new URLs anytime |
-| 🗑️ Clear Chat | Reset conversation while keeping the loaded site |
+|  Website Input | Enter any public website URL |
+|  RAG Pipeline | Retrieves relevant content from the webpage |
+|  Conversational Chat | Ask follow-up questions naturally |
+|  Context-Aware Answers | Responses grounded in website content only |
+|  Fast Inference | Powered by Groq LLM (LLaMA 3) |
+|  Local Vector Store | No external database required |
+|  Switch Websites | Load and analyze new URLs anytime |
+|  Clear Chat | Reset conversation while keeping the loaded site |
 
 ---
 
-## 🧠 System Architecture
+##  System Architecture
 
 ```
 User Enters URL
@@ -50,35 +50,35 @@ History-Aware Retriever (Similarity Search)
 LLM → Context-Aware Answer (Groq / LLaMA 3)
       │
       ▼
-💬 Chat Interface (Streamlit)
+ Chat Interface (Streamlit)
 ```
 
 ---
 
-## ⚙️ Tech Stack
+##  Tech Stack
 
-**🤖 AI / NLP**
+** AI / NLP**
 - LangChain — RAG orchestration
 - Groq LLM — Fast inference (LLaMA-3 8B)
 - HuggingFace Embeddings — `all-MiniLM-L6-v2` sentence embeddings
 - Retrieval-Augmented Generation (RAG)
 
-**🗄️ Vector Database**
+** Vector Database**
 - FAISS — Local semantic search
 
-**🌐 Data Processing**
+** Data Processing**
 - WebBaseLoader — Website scraping
 - RecursiveCharacterTextSplitter — Text chunking
 
-**🖥️ Frontend**
+** Frontend**
 - Streamlit — Interactive web interface
 
-**🐍 Backend**
+** Backend**
 - Python 3.10+
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```
 WebMind-AI/
@@ -93,33 +93,33 @@ WebMind-AI/
 
 ---
 
-## 🔄 Pipeline Workflow
+##  Pipeline Workflow
 
-**1️⃣ Website Processing**
+**1️ Website Processing**
 The provided URL is loaded and cleaned to extract meaningful textual content.
 
-**2️⃣ Text Chunking**
+**2️ Text Chunking**
 Large text is split into smaller overlapping chunks for better retrieval.
 
-**3️⃣ Embedding Generation**
+**3️ Embedding Generation**
 Each chunk is converted into vector embeddings using a HuggingFace model.
 
-**4️⃣ Vector Storage**
+**4️ Vector Storage**
 Embeddings are stored in a FAISS vector database for fast similarity search.
 
-**5️⃣ Retrieval-Augmented Generation (RAG)**
+**5️ Retrieval-Augmented Generation (RAG)**
 When a question is asked:
 - Chat history is used to rewrite the search query
 - Relevant chunks are retrieved from FAISS
 - Context is injected into the LLM prompt
 - The LLM generates a grounded response
 
-**6️⃣ Conversational Output**
+**6️ Conversational Output**
 The AI answers questions based only on the website content, enabling accurate and contextual interactions.
 
 ---
 
-## 💬 Example Interaction
+##  Example Interaction
 
 **User:** What is the main topic of this website?
 
@@ -131,15 +131,15 @@ The AI answers questions based only on the website content, enabling accurate an
 
 ---
 
-## 🖥️ Getting Started
+##  Getting Started
 
-**1️⃣ Clone the Repository**
+**1️ Clone the Repository**
 ```bash
 git clone https://github.com/yourusername/webmind-ai.git
 cd webmind-ai
 ```
 
-**2️⃣ Create Virtual Environment**
+**2️ Create Virtual Environment**
 ```bash
 python -m venv venv
 ```
@@ -152,9 +152,9 @@ venv\Scripts\activate
 source venv/bin/activate
 ```
 
-**3️⃣ Install Dependencies**
+**3️ Install Dependencies**
 
-> ⚠️ **Windows users only** — install CPU-only PyTorch first to avoid DLL errors:
+>  **Windows users only** — install CPU-only PyTorch first to avoid DLL errors:
 > ```bash
 > pip install torch==2.5.1 --index-url https://download.pytorch.org/whl/cpu
 > ```
@@ -163,14 +163,14 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-**4️⃣ Add API Key**
+**4️ Add API Key**
 
 Create a `.env` file:
 ```env
 GROQ_API_KEY=your_api_key_here
 ```
 
-**5️⃣ Run the Application**
+**5️ Run the Application**
 ```bash
 streamlit run app.py
 ```
@@ -178,7 +178,7 @@ Open the local URL shown in your terminal (usually `http://localhost:8501`).
 
 ---
 
-## ⚠️ Limitations
+##  Limitations
 
 - Works only with publicly accessible websites
 - Some JavaScript-heavy pages may not load correctly
@@ -187,7 +187,7 @@ Open the local URL shown in your terminal (usually `http://localhost:8501`).
 
 ---
 
-## 🔮 Future Improvements
+##  Future Improvements
 
 - Multi-page website crawling
 - Source citations in answers
@@ -198,15 +198,9 @@ Open the local URL shown in your terminal (usually `http://localhost:8501`).
 
 ---
 
-## 📊 RAG Evaluation (Optional)
-
-Evaluation can be performed using **RAGAS** metrics to measure faithfulness and relevance of generated answers.
-
----
-
-## 👨‍💻 Author
+##  Author
 
 **Jatin Dhanda**  
-AI / Machine Learning Enthusiast — focused on building LLM-powered intelligent systems 🚀
+AI / Machine Learning Enthusiast — focused on building LLM-powered intelligent systems 
 
 
